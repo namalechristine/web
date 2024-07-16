@@ -1,0 +1,25 @@
+.das {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding: 10px; /* added padding for better spacing */
+    box-sizing: border-box; /* include padding and border in element's total width and height */
+    font-weight: bold;
+    
+}
+@media (max-width: 768px) {
+    .das {
+        height: auto; /* Adjust height as needed for smaller screens */
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+}
+.da {
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding: 10px; /* added padding for better spacing */
+    box-sizing: border-box; /* include padding and border in element's total width and height */
+    font-weight: bold;
+    
+}

@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+    <style>
+      .contact-bar {
+          background-color: #000;
+          color: #fff;
+          padding: 10px 0;
+          margin-bottom: 10px;
+          height: 60px;
+      }
+      .contact-info i {
+          color: #FFD700; /* Gold color for icons */
+      }
+      .contact-info div {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+      }
+      .contact-info div i {
+          margin-right: 5px;
+      }
+      .apply-button {
+          background-color: #FFC107; /* Yellow background */
+          color: #000;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          margin-left: 20px;
+      }
+      .social-media a {
+          color: #fff;
+          margin-left: 15px;
+          text-decoration: none;
+      }
+      .social-media a:hover {
+          color: #FFD700;
+      }
+      .carousel-item {
+            height: 100vh; /* Full viewport height */
+            background-color: #000;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+           .main-body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-header {
+            text-align: left;
+            color: #d14027;
+            padding: 20px;
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .video-area {
+            flex: 1;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+        .text-area {
+            flex: 1;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+        .apply {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #ffc107;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .apply-button:hover {
+            background-color: #e0a800;
+        }    
+         .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        .icon-box {
+            text-align: center;
+            flex: 1;
+        }
+        .icon-box i {
+            font-size: 50px;
+            color: #ffc107;
+        }
+        .icon-box h3 {
+            margin: 15px 0 5px;
+            font-size: 18px;
+        }
+        .icon-box p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .separator {
+            width: 1px;
+            background-color: #ccc;
+            height: 100px;
+            margin: 0 20px;
+        } 
+.bad {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .site-footer {
+            background-color: #000;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            margin: 20px;
+            min-width: 200px;
+        }
+        .footer-section h3 {
+            border-bottom: 2px solid #ffc107;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            color: #ffc107;
+        }
+        .social-links {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .social-links a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .newsletter-email {
+            padding: 10px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .subscribe-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffc107;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .subscribe-btn:hover {
+            background-color: #e0a800;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+                .b {
+                    display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            display: flex;
+            gap: 20px;
+        }
+        .image-box {
+            position: relative;
+            width: 100%;
+            height: 300px;
+             border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #000;
+        }
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .image-box:hover img {
+            transform: scale(1.1);
+        }
+        .image-box .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: background 0.3s ease;
+        }
+        .image-box:hover .text-overlay {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .zoomed {
+            width: 80vw;
+            height: 80vh;
+            object-fit: contain;
+            border: none;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+        .overlay.active {
+            display: flex;
+        }
+                 .bo {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%;
+            height: 100px;
+        }
+        .content-section h2 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        .event-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .event-item img {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .event-details-container {
+            flex: 1;
+        }
+        .event-details-container h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .event-details-container p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .event-date {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .no-events-text {
+            color: #777;
+        }
+        .ody {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .stats-section {
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        .stats-section img {
+            width: 100%;
+            height: 450px;
+        }
+        .stats-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+        .stat-item {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .stat-item h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .stat-item p {
+            font-size: 20px;
+            margin: 5px 0 0;
+        }
+        .stat-item .divider {
+            width: 50px;
+            height: 2px;
+            background-color: #ffd700;
+            margin: 10px auto;
+        }
+        .ad {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.marquee-container {
+    width: 100%;
+  overflow: hidden;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.marquee {
+    display: flex;
+    justify-content: space-around;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee img {
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.bod {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c8c80a; /* Pale yellow background */
+}
+
+.containe {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+}
+
+.twitter-feed {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    position: relative;
+}
+
+.twitter-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #000;
+}
+
+.faq {
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .twitter-feed,
+    .faq {
+        width: 48%;
+        margin-bottom: 0;
+    }
+
+    .faq {
+        padding: 20px;
+    }
+}
+
+.twitter-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #000;
+}
+.cv {
+    text-align: center;
+    color: red;
+    font-size: medium;
+}
+
+
+
+  </style>
+  </head>
+  <body>
+    <div class="das">
+      <p>Take advantage of the 200 Scholarships Available Now ReadMore...</p>
+    </div>
+    <div class="container-fluid contact-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+          <div class="d-flex contact-info">
+              <div>
+                  <i class="fas fa-map-marker-alt"></i> Uganda Martyrs University Nkozi
+              </div>
+              <div>
+                  <i class="fas fa-envelope"></i> registrar@umu.ac.ug
+              </div>
+              <div>
+                  <i class="fas fa-phone"></i> +256-743-897-219
+              </div>
+          </div>
+          <div class="d-flex align-items-center social-media">
+              <a href="#" class="apply-button">Apply Now</a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                  
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="nav-item dropdown">
+                  
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="nav-item dropdown">
+                  
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="nav-item dropdown">
+                  
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="nav-item dropdown">
+                  
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="nav-item dropdown">
+                  
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li class="nav-item dropdown">
+                  
+            </ul>
+          </li>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/bb1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/bb1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/bb2.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+     <div class="main-body">
+    <div class="top-header">
+        <h4>Welcome to Uganda Martyrs University</h4>
+    </div>
+    <div class="content-wrapper">
+        <div class="video-area">
+            <iframe src="https://www.youtube.com/embed/ZbahOyQ0GkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="text-area">
+            <h2>Applications for the next intake are open</h2>
+            <p>Uganda Martyrs University (UMU) is a faith-based private University owned by the Episcopal Conference of the Catholic Bishops of Uganda. UMU acknowledges the late Archbishop Kiwanuka as the Father of Catholic higher education in Uganda.</p>
+            <p>The Academic Registrar, Uganda Martyrs University (UMU) invites prospective applicants from Uganda, East Africa, and around the world for Postgraduate and Undergraduate programs in the current intake. The University currently provides three avenues for admission, including direct entry, entry for diploma holders (both graduate and postgraduate), and admission through the web portal.</p>
+            <a href="#" class="apply">Apply Today</a>
+        </div>
+    </div>
+    </div>
+    <div class="body">
+    <div class="icon-container">
+        <div class="icon-box">
+            <i class="fas fa-book-reader"></i>
+            <h3>University Brochure</h3>
+            <p>Download Brochure</p>
+        </div>
+        <div class="separator"></div>
+        <div class="icon-box">
+            <i class="fa fa-download"></i>
+            <h3>University Downloads</h3>
+            <p>All University downloads</p>
+        </div>
+        <div class="separator"></div>
+        <div class="icon-box">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Alumni</h3>
+            <p>Trained students</p>
+        </div>
+        <div class="separator"></div>
+        <div class="icon-box">
+            <i class="fas fa-users"></i>
+            <h3>Students life & Culture</h3>
+            <p>Students & University</p>
+        </div>
+    </div>
+    </div>
+    <h1><div class="cv">What programme would you like to pursue?
+        Enroll for our academic programs</div></h1>
+    <div class="b">
+        <div class="image-container">
+            <div class="image-box" onclick="zoomImage(this)">
+                <img src="images/v1.jpg" alt="Undergraduate">
+                <div class="text-overlay">
+                    UMU offers a wide range of Diploma and Bachelors<br>
+                    programmes stretching across 2 intakes. January Intake and<br>
+                    August Intake.
+                </div>
+            </div>
+            <div class="image-box" onclick="zoomImage(this)">
+                <img src="images/v2.jpg" alt="Postgraduate">
+                <div class="text-overlay">
+                    UMU offers uniquely designed Masters programmes with a<br>
+                    wide range of unique experience options for our students.
+                </div>
+            </div>
+            <div class="image-box" onclick="zoomImage(this)">
+                <img src="images/v3.jpg" alt="Short Course">
+                <div class="text-overlay">
+                    UMU offers a range of different Short Course programmes.<br>
+                    The Short Course Programmes offered at UMU are listed below
+                </div>
+            </div>
+        </div>
+    
+        <div class="overlay" onclick="closeZoom()">
+            <img class="zoomed" id="zoomedImage" src="" alt="">
+        </div>
+    </div>
+        <script>
+            function zoomImage(element) {
+                const imgSrc = element.querySelector('img').src;
+                const zoomedImage = document.getElementById('zoomedImage');
+                const overlay = document.querySelector('.overlay');
+                zoomedImage.src = imgSrc;
+                overlay.classList.add('active');
+            }
+    
+            function closeZoom() {
+                const overlay = document.querySelector('.overlay');
+                overlay.classList.remove('active');
+            }
+        </script> 
+    <div class="bo"></div>
+<div class="main-container">
+        <div class="content-section">
+            <h2>Happening around Campus</h2>
+            <div class="event-item">
+                <img src="images/g1.jpg" alt="Event Image">
+                <div class="event-details-container">
+                    <h3>Launch of seven outstanding ACALISE enterprises/facilities at Uganda Martyrs University</h3>
+                    <p class="event-date">June 20, 2024</p>
+                    <p>Uganda Martyrs University (UMU) will on Thursday 20th June 2024 launch six outstanding enterprises/facilities procured…</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="images/g1.jpg" alt="Event Image">
+                <div class="event-details-container">
+                    <h3>Short Course on Chaplaincy at Uganda Martyrs University</h3>
+                    <p class="event-date">June 1, 2024</p>
+                    <p>Click Here to Register Now Empowering chaplains in Uganda with essential knowledge, values and skills…</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="images/g2.jpeg" alt="Event Image">
+                <div class="event-details-container">
+                    <h3>Short Course on Chaplaincy at Uganda Martyrs University</h3>
+                    <p class="event-date">June 1, 2024</p>
+                    <p>Click Here to Register Now Empowering chaplains in Uganda with essential knowledge, values and skills…</p>
+                  </div>
+            </div>
+            <a href="#" class="apply">VIEW ALL</a>
+        </div>
+        <div class="section">
+            <h2>Upcoming Events & Activities</h2>
+            <p class="no-events-text">No Events Available</p>
+        </div>
+    </div>
+    </div>
+    <div class="ody">
+    <div class="stats-section">
+        <img src="images/bb1.jpg" alt="University Background Image">
+        <div class="stats-overlay">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h2>30000</h2>
+                    <div class="divider"></div>
+                    <p>Alumni</p>
+                </div>
+                <div class="stat-item">
+                    <h2>155</h2>
+                    <div class="divider"></div>
+                    <p>Academic Programs</p>
+                </div>
+                <div class="stat-item">
+                    <h2>6</h2>
+                    <div class="divider"></div>
+                    <p>University Campuses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="ad">
+    <div class="marquee-container">
+        <div class="marquee">
+            <img src="images/m1.png" alt="Image 1">
+            <img src="images/m2.png" alt="Image 2">
+            <img src="images/m3.png" alt="Image 3">
+            <img src="images/m4.png" alt="Image 4">
+            <img src="images/m2.png" alt="Image 1">
+            <img src="images/m1.png" alt="Image 2">
+            <img src="images/m4.png" alt="Image 3">
+            <img src="images/m2.png" alt="Image 4">
+        </div>
+    </div>
+  </div>
+  <div class="bod">
+  <div class="containe">
+    <div class="twitter-feed">
+        <!-- <h2>Posts from @umunkozi</h2> -->
+        <div class="twitter-loader">Loading Twitter feed...</div>
+        <a class="twitter-timeline" data-theme="light" href="https://twitter.com/umunkozi?ref_src=twsrc%5Etfw">Tweets by umunkozi</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">How do I apply to UMU?</div>
+        <div class="faq-item">How do I check for my results?</div>
+        <div class="faq-item">How do I know the courses I am doing this semester?</div>
+        <div class="faq-item">How do I submit my assignments?</div>
+        <div class="faq-item">What accommodation options are available?</div>
+        <div class="faq-item">What are the application requirements for new applicants?</div>
+        <div class="faq-item">What causes failure to log in?</div>
+        <div class="faq-item">What programmes does Uganda Martyrs University offer?</div>
+        <div class="faq-item">What is the procedure for an international student to join UMU?</div>
+    </div>
+</div>
+</div>
+<script>
+    // Hide the loader once the Twitter script is loaded
+    window.addEventListener('load', function() {
+        document.querySelector('.twitter-loader').style.display = 'none';
+    });
+</script>
+
+    <div class="bad">
+    <div class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Uganda Martyrs University</h3>
+                <p>P.O. Box 5498, Kampala, Uganda</p>
+                <p>Telephone: +256-743-897-219</p>
+                <p>Email Us: pro@umu.ac.ug / registrar@umu.ac.ug</p>
+                <p>Web: <a href="https://www.umu.ac.ug">www.umu.ac.ug</a></p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#">Apply Now</a></p>
+                <p><a href="#">E-Learning Portal</a></p>
+                <p><a href="#">Students Portal</a></p>
+                <p><a href="#">The Archbishop Kiwanuka Library</a></p>
+                <p><a href="#">News & Updates</a></p>
+                <p><a href="#">Jobs & Careers</a></p>
+                <p><a href="#">Alumni</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Admission</h3>
+                <p><a href="#">Graduation Lists</a></p>
+                <p><a href="#">How to Apply</a></p>
+                <p><a href="#">Courses Listings</a></p>
+                <p><a href="#">Undergraduate Programmes</a></p>
+                <p><a href="#">Post Graduate Programmes</a></p>
+                <p><a href="#">Fees Structure</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Don't miss any updates. Sign-up for our newsletters</p>
+                <input type="email" class="newsletter-email" placeholder="E-mail">
+                <a href="#" class="subscribe-btn">Subscribe Now</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Copyright All Rights Reserved - Uganda Martyrs University
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
